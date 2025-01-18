@@ -1,0 +1,38 @@
+/* src/components/Header.css */
+.main-header {
+    background-color: #4b86fa;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-nav{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.main-nav button {
+    background-color: #fdfdfd;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.main-nav button:hover {
+    background-color: #d3d3d3;
+}
+
+.main-nav button:active {
+    background-color: #0e90d2;
+}
+
+.main-header-btn{
+    width:16rem;
+    background-color: #d3d3d3;
+    color: #515050;
+    font-weight: bold;
+}
