@@ -7,12 +7,11 @@
 }
 
 .main-nav{
-    margin-top:5px;
-    margin-bottom:5px;
+    margin-top:12px;
 }
 
 .main-nav button {
-    background-color: #fdfdfd;
+    /*background-color: #fdfdfd;*/
     border: none;
     padding: 10px 20px;
     margin: 5px;
@@ -22,17 +21,22 @@
     transition: background-color 0.3s;
 }
 
-.main-nav button:hover {
-    background-color: #d3d3d3;
+.main-nav button {
+    transition: font-size 0.1s ease-in-out;
 }
 
-.main-nav button:active {
-    background-color: #0e90d2;
+.main-nav button:hover {
+    color:white;
 }
+
+/*.main-nav button:active {*/
+/*    background-color: #0e90d2;*/
+/*}*/
 
 .main-header-btn{
-    width:16rem;
-    background-color: #d3d3d3;
-    color: #515050;
+    width:12rem;
+    font-style:italic;
+    background-color: #4b86fa;
+    color: #e6e6e6;
     font-weight: bold;
 }

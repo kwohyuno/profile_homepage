@@ -12,6 +12,8 @@ function Header() {
 
             <nav className="main-nav">
                 <button onClick={() => navi("/")} className="main-header-btn">Home</button>
+                <button onClick={() => navi("/career")} className="main-header-btn">Career</button>
+                <button onClick={() => navi("/education")} className="main-header-btn">Education</button>
                 <button onClick={() => navi("/project")} className="main-header-btn">Projects</button>
                 <button onClick={() => navi("/study")} className="main-header-btn">Study</button>
                 <button onClick={() => navi("/certificate")} className="main-header-btn">Certificate</button>
