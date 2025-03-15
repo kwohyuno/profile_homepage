@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.page-enter {
+  opacity: 0;
+  /*transform: translateX(50px);*/
+}
+.page-enter-active {
+  opacity: 1;
+  /*transform: translateX(0);*/
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.page-exit {
+  opacity: 1;
+}
+.page-exit-active {
+  opacity: 0;
+  /*transform: translateX(0px);*/
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}

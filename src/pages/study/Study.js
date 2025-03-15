@@ -28,6 +28,10 @@ function Study(props){
             <div className="study-body">
                 <h1>My Study</h1>
                 <ul>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(7)}>
+                        <h3>Java BackEnd Online Course</h3>
+                        <p>Online Course at Inflearn</p>
+                    </li>
                     <li style={{cursor: 'pointer'}} onClick={() => openModal(6)}>
                         <h3>NoSQL, Big Data, and Spark Foundations Specialization</h3>
                         <p>Online Course of Coursera</p>
@@ -243,6 +247,30 @@ function Study(props){
                         <br/>
                         <a style={{color: "blue", cursor: "pointer"}}
                            href="https://www.coursera.org/specializations/nosql-big-data-and-spark-foundations">link</a>
+                        <br/>
+                    </div>
+                </div>
+            )}
+
+            {modalOpenStates[7] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(7)}>&times;</span>
+                        <h2>Java BackEnd Online Course</h2>
+                        <div className="modal-content-li">
+                            <br/>
+                            <li>Java MVC Pattern
+                            </li>
+                            <br/>
+                            <li>ORM & Database
+                            </li>
+                            <br/>
+                            <li>QueryString
+                            </li>
+                        </div>
+                        <br/>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="https://www.inflearn.com/courses/lecture?courseId=326674&unitId=71233">link</a>
                         <br/>
                     </div>
                 </div>

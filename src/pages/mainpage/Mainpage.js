@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import '../components/Header.css';
 import profileimg from '../../resources/profile_img.jpeg';
 import './Mainpage.css';
-import { FaGithub, FaLinkedin, FaBlogger } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaBlogger, FaAlignJustify  } from 'react-icons/fa';
 
 
 function Mainpage(props){
@@ -40,21 +40,19 @@ function Mainpage(props){
                            rel="noopener noreferrer">
                             <FaLinkedin className="social-icon2"/>
                             </a>
+                            <a href="https://docs.google.com/document/d/1x5I4ooQKozhaSRCx6y6e-78v5Wnq76IgifgbsS58xUQ/edit?usp=sharing" target="_blank"
+                               rel="noopener noreferrer">
+                                <FaAlignJustify className="social-icon3"/>
+                            </a>
                         </div>
                 </div>
 
                 <div className="mainpage-body-contents">
                     <div className="mainpage-body-contents-introduction">
                         <h4>
-                            Hi, I am Jake, a versatile Software Engineer with a comprehensive skill set spanning Full
-                            Stack
-                            development (Frontend, Backend, DevOps, Data, and AI). I am passionate about building
-                            impactful
-                            products that drive business success. I demonstrated strong technical expertise and
-                            effective
-                            collaboration in various projects in AWS and FPT. Always committed to continuous improvement
-                            and dedicated
-                            to contributing to team success by delivering exceptional results.
+                        Hi, I am Jake, a results-driven Software Engineer passionate about Full Stack development and building scalable, high-impact solutions that drive business success.
+                            <br/>Designed, developed, and deployed end-to-end applications, leveraging expertise in Object-Oriented Programming (OOP), Data Structures, and Design Patterns to create efficient and maintainable code.
+                            <br/>Currently expanding expertise in DevOps and AI, integrating cloud technologies and automation to enhance system reliability and scalability.
 
                             <br/><br/>
                             I am now studying in University of San Francisco, focusing on AI and Computer Science.

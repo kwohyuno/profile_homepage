@@ -28,6 +28,12 @@ function Project(props){
             <div className ="project-body">
                 <h1>My Projects</h1>
                 <ul>
+
+
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(3)}>
+                        <h3>Open Energy Dashboard : CTI-CodeDay SWE Micro-internship</h3>
+                        <p>JavaScript, TypeScript, Mocha, Chai, PostgresSQL, Docker </p>
+                    </li>
                     <li style={{cursor: 'pointer'}} onClick={() => openModal(0)}>
                         <h3>Travel Helper - A Hotel Review Website</h3>
                         <p>React, JettyServer & Servlet, MySQL </p>
@@ -79,23 +85,42 @@ function Project(props){
                         <p>Individual side project </p>
                         <br/>
                         <div className="modal-content-li">
-                            <li>Designed FrontEnd, BackEnd, Database, and Cloud Infrastructure of web service
-                                considering purpose and user experience of the web service.
+                            <li>Developed and deployed a full-stack social network for international students, integrating OpenAI’s API for real-time translation, which increased engagement among non-native English speakers by 40%.
+
 
                             </li>
                             <br/>
-                            <li>Leveraged OpenAI’s api to provide translation services for potential users who have
-                                limited English proficiency.
+                            <li>Optimized backend with Spring Boot and MySQL, improving response time by 50%, and deployed to AWS EC2, ensuring 99.9% uptime and handling 10,000+ daily requests.
+
                             </li>
                             <br/>
-                            <li>Substituted t2.micro instance with t2.xlarge instance to solve server capacity issue and
-                                successfully deployed web application. Ran service for two weeks as beta service,
-                                collecting 20+ users, and got lessons to fix vulnerable areas such as web security.
-                            </li>
-                            <br/>
+                            <li>Made CI/CD pipeline with Git Action, AWS(EC2, RDS), and Docker, enabling continuous integration and testing.</li>
+
                             <a style={{color: "blue", cursor: "pointer"}}
                                href="https://github.com/kwohyuno/SideProject-Jake">github link</a>
                         </div>
+                    </div>
+                </div>
+            )}
+
+            {modalOpenStates[3] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(3)}>&times;</span>
+                        <h2>Open Energy Dashboard : CTI-CodeDay SWE Micro-internship</h2>
+                        <p>Open Source Contributor</p>
+                        <br/>
+                        <div className="modal-content-li">
+                            <li>Contributed to Open Energy Dashboard, enhancing hourly energy data validation over 14 days by developing a line group reading test case (c11) using JavaScript, TypeScript, Mocha, and Chai, ensuring values are read correctly to reflect 14 days of hourly points and middle readings.
+
+                            </li>
+                            <br/>
+                            <li>Improved test coverage by 30% and enhanced data accuracy by 25% in a Dockerized environment, ensuring seamless integration and reliable energy value processing.
+                            </li>
+                            <br/>
+                        </div>
+                        <a style={{color: "blue", cursor: "pointer"}}
+                           href="https://jake-kwon.blogspot.com">blog link</a>
                     </div>
                 </div>
             )}
@@ -138,6 +163,10 @@ function Project(props){
                     </div>
                 </div>
             )}
+
+
+
+
 
 
         </div>

@@ -26,8 +26,9 @@ function Education(props){
         <div className="project">
             <Header/>
             <div className ="project-body">
-                <h1>Career</h1>
+                <h1>Education</h1>
                 <ul>
+
                     <li style={{cursor: 'pointer'}} onClick={() => openModal(0)}>
                         <h3>Univesity of San Francisco</h3>
                         <p>Masters of Science, Computer Science </p>
@@ -38,7 +39,11 @@ function Education(props){
                     </li>
                     <li style={{cursor: 'pointer'}} onClick={() => openModal(2)}>
                         <h3>Seoul National University</h3>
-                        <p>Bachelor's of Education, Physical Education</p>
+                        <p>Bachelor's of Education</p>
+                    </li>
+                    <li style={{cursor: 'pointer'}} onClick={() => openModal(3)}>
+                        <h3>Zhejiang University</h3>
+                        <p>Exchange Student</p>
                     </li>
                 </ul>
 
@@ -51,6 +56,19 @@ function Education(props){
                         <span className="modal-close" onClick={() => closeModal(0)}>&times;</span>
                         <h2>University of San Francisco</h2>
                         <p>MSCS, Computer Science</p>
+                        <br/>
+                        <p>Relevant coursework </p>
+                        <li>Principles of Software Development
+                        </li>
+                        <li>Discrete Math
+                        </li>
+                        <li>Foundations of AI
+                        </li>
+                        <li>Data Structure
+                        </li>
+                        <li>DevOps
+                        </li>
+
                     </div>
                 </div>
             )}
@@ -58,10 +76,12 @@ function Education(props){
             {/* Modal 2 */}
             {modalOpenStates[1] && (
                 <div className="modal">
-                    <div className="modal-content">
+                <div className="modal-content">
                         <span className="modal-close" onClick={() => closeModal(1)}>&times;</span>
                         <h2>The Cyber University of Korea</h2>
                         <p>BS in Software Engineering </p>
+                        <p>Relevant coursework </p>
+                        <li>Data Structure, Operating System, Database, Security, Computer Structure, Algorithm, Web Development, Mobile App Development, Network, Cloud, Artificial Intelligence, Machine Learning</li>
                         <br/>
 
                     </div>
@@ -75,6 +95,21 @@ function Education(props){
                         <span className="modal-close" onClick={() => closeModal(2)}>&times;</span>
                         <h2>Seoul National University</h2>
                         <p>BEd in Physical Education </p>
+                        <li>Activities and societies: MCSA(Management Consulting Student Association)</li>
+                        <br/>
+
+                    </div>
+                </div>
+            )}
+
+            {/* Modal 4 */}
+            {modalOpenStates[3] && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <span className="modal-close" onClick={() => closeModal(3)}>&times;</span>
+                        <h2>Zhejiang University</h2>
+                        <p>Exchange Student(Feb 2017 - Jan 2018)</p>
+                        <li>Acquired highest level of Chinese Language Proficiency (HSK Level 6)</li>
                         <br/>
 
                     </div>
